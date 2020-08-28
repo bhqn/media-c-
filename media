@@ -1,0 +1,36 @@
+int main() 
+
+{ 
+float x;
+float cont = 0;
+float soma, media;
+float ma;
+
+
+while (cont <= 2) {
+cont++;
+cout << "Digite o " << cont << " valor" << endl;
+cin >> x;
+if (x >= 0 && x <=10){
+
+ media = (soma += x)/cont;
+ ma = (x + x*2 + x*3 + media)/7;
+ 
+ } else {
+	cout << "error: Digite um valor entre 0 e 10" << endl;
+	return 0;
+}
+}
+if ( ma >= 9){
+cout << "sua Media eh igual a " << ma <<" voce tirou A" << endl;
+}else if ( ma >= 7.5 && ma <= 8.9 ){
+cout << "sua Media eh igual a " << ma <<" voce tirou B" << endl;
+}else if ( ma >= 6 && ma <= 7.4 ){
+cout << "sua Media eh igual a " << ma <<" voce tirou C" << endl;
+}else if ( ma >= 4 && ma <= 5.9 ){
+cout << "sua Media eh igual a " << ma <<" voce tirou B" << endl;
+}else{
+cout << "sua Media eh igual a " << ma <<" voce tirou E" << endl;
+}
+
+}
